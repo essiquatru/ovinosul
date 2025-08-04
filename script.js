@@ -52,63 +52,8 @@ function initializeHeader() {
 
 // Mobile menu functionality
 function initializeMobileMenu() {
-    const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-    let isMenuOpen = false;
-
-    if (!mobileToggle || !mobileNav) return;
-
-    // Toggle mobile menu
-    function toggleMobileMenu() {
-        isMenuOpen = !isMenuOpen;
-        
-        mobileToggle.classList.toggle('active', isMenuOpen);
-        mobileNav.classList.toggle('active', isMenuOpen);
-        
-        // Update ARIA attributes
-        mobileToggle.setAttribute('aria-expanded', isMenuOpen);
-        mobileToggle.setAttribute('aria-label', isMenuOpen ? 'Fechar menu' : 'Abrir menu');
-        
-        // Prevent body scroll when menu is open
-        document.body.style.overflow = isMenuOpen ? 'hidden' : '';
-    }
-
-    // Close mobile menu
-    function closeMobileMenu() {
-        if (isMenuOpen) {
-            toggleMobileMenu();
-        }
-    }
-
-    // Event listeners
-    mobileToggle.addEventListener('click', toggleMobileMenu);
-
-    // Close menu when clicking on a link
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        if (isMenuOpen && !mobileNav.contains(e.target) && !mobileToggle.contains(e.target)) {
-            closeMobileMenu();
-        }
-    });
-
-    // Close menu on escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && isMenuOpen) {
-            closeMobileMenu();
-        }
-    });
-
-    // Close menu on window resize
-    window.addEventListener('resize', function() {
-        if (window.innerWidth >= 768 && isMenuOpen) {
-            closeMobileMenu();
-        }
-    });
+    // Mobile menu functionality removed - replaced with sub-header carousel
+    console.log('Mobile menu functionality has been replaced with sub-header carousel');
 }
 
 // Search functionality

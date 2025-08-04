@@ -15,6 +15,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="subheader-carousel.css">
     <link rel="stylesheet" href="vacinas.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="stylesheet" href="mobile.css">
@@ -33,6 +34,44 @@
     <meta name="theme-color" content="#2d5a3d">
 </head>
 <body>
+    <!-- Sub-header Carousel -->
+    <div class="sub-header" role="navigation" aria-label="Navegação de opções">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <a href="index.html#home" class="carousel-link">Home</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="racas.html" class="carousel-link">Raças de Ovinos</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="vacinas.html" class="carousel-link active">Calendário de Vacinas</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#sobre" class="carousel-link">Sobre o Projeto</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#contato" class="carousel-link">Contato</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#origem" class="carousel-link">Origem e História</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#guias" class="carousel-link">Guias Práticos</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#recursos" class="carousel-link">Recursos</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#produtores" class="carousel-link">Para Produtores</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="index.html#novidades" class="carousel-link">Novidades 2025</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <header class="header">
         <div class="container">
             <div class="nav-wrapper">
@@ -42,60 +81,9 @@
                     </a>
                 </div>
                 
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="index.html#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="racas.html" class="nav-link">Raças</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="vacinas.html" class="nav-link active">Vacinas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#origem" class="nav-link">Origem</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#sobre" class="nav-link">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html#contato" class="nav-link">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
 
-                <!-- Mobile Navigation -->
-                <div class="mobile-nav">
-                    <div class="mobile-nav-content">
-                        <ul class="mobile-nav-list">
-                            <li class="mobile-nav-item">
-                                <a href="index.html#home" class="mobile-nav-link">Home</a>
-                            </li>
-                            <li class="mobile-nav-item">
-                                <a href="racas.html" class="mobile-nav-link">Raças</a>
-                            </li>
-                            <li class="mobile-nav-item">
-                                <a href="vacinas.html" class="mobile-nav-link active">Vacinas</a>
-                            </li>
-                            <li class="mobile-nav-item">
-                                <a href="index.html#origem" class="mobile-nav-link">Origem</a>
-                            </li>
-                            <li class="mobile-nav-item">
-                                <a href="index.html#sobre" class="mobile-nav-link">Sobre</a>
-                            </li>
-                            <li class="mobile-nav-item">
-                                <a href="index.html#contato" class="mobile-nav-link">Contato</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+
+
             </div>
         </div>
     </header>
@@ -446,5 +434,6 @@
 
     <script src="script.js"></script>
     <script src="vacinas.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
