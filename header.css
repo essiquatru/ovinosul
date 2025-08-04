@@ -49,13 +49,24 @@
 /* Responsive adjustments for mobile */
 @media (max-width: 767px) {
     .header {
-        top: 36px;
+        top: 44px;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        top: 50px;
+    }
+    
+    .logo h1 {
+        font-size: 1.6rem;
     }
 }
 
 @media (min-width: 1024px) {
     .header {
-        top: 44px;
+        top: 52px;
     }
     
     .logo h1 {
