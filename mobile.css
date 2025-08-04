@@ -58,8 +58,8 @@
     
     /* Mobile Hero - Vertical Focus */
     .hero {
-        min-height: calc(100vh - 8rem);
-        padding-top: calc(var(--header-height) + 44px);
+        min-height: calc(100vh - 7rem);
+        padding-top: calc(var(--header-height) + 36px);
     }
     
     .hero-content {
